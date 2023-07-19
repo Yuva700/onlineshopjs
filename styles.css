@@ -1,0 +1,445 @@
+
+
+*{
+  margin:0;
+  border: 0px 0px 2px 0px;
+  padding:0;
+ 
+}
+
+
+
+
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  
+  
+}
+
+.nav-image, img{
+  width:100px;
+  height: 50px;
+  
+
+}
+
+
+
+.nav-bar, ul li {
+  display:inline-block;
+  padding-top: 14px;
+
+  
+}
+
+
+
+ul li a{
+  list-style: none;
+  text-decoration: none;
+  padding-left: 8px;
+  padding-right: 4px;
+  
+}
+
+/*
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  
+  
+}
+
+
+.nav-bar, ul li a {
+  display:inline-block;
+  list-style: none;
+  text-decoration: none;
+  
+
+}
+*/
+
+/*
+
+.navbar{
+    background-color :darkcyan;
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    width: 1162px;
+    
+}
+
+
+
+a, .navbar{
+    text-decoration: none;
+    padding-left: 8px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+
+.nimage{
+  width: 100px;
+  
+  margin: 0px;
+  border: 0px;
+  padding-right: 0px;
+}
+
+*/
+
+/*
+.searchbox{
+    text-align: left;
+    margin-top: 10px;
+    
+   
+   
+}
+
+input, .searchbox{
+    width: 45%;
+    margin-left: 2px;
+}
+
+*/
+
+/*
+
+.searchbox{
+    margin-top: 2px;    
+    
+    
+}
+
+
+#searchd, input{
+    margin-left: 8px;
+    width: 60%;  
+    padding: 5px;
+   
+}
+
+#searchd, button{
+    padding: 5px;
+    
+    
+}
+
+#search-td-two button{
+    margin-left: 428px;
+    padding: 5px;
+}
+*/
+
+.searchbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px; 
+  margin-bottom: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+
+#searchd, input{
+  width: 60%;
+  height: 25px;
+  display: inline-block;
+  border: 0px;
+
+}
+
+.btngt{
+  width: 55px;
+  height: 29px;
+  background-color:cornflowerblue; 
+  border: 0px;
+ 
+}
+
+.btnqr{
+  width: 100px;
+  height: 29px;
+  background-color:cornflowerblue; 
+  border: 0px;
+
+}
+
+.searchin{
+  background-color: #bbb;
+  border: 0px;
+  outline: none;
+  padding: 2px;
+}
+
+
+.greetimg, img{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+}
+
+.adoffimg{
+  display:flex;
+  justify-content: center;
+  
+}
+
+
+
+ .flipy{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  
+  /*text-align: center;*/
+}
+
+.flip-card {
+    background-color: transparent;
+    /*width: 300px;*/
+    width: 290px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 500px; /* Remove this if you don't want the 3D effect */
+    /*max-width: 100%;
+  text-align: center;*/
+
+  }
+
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    
+  
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:black;
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+
+ /*
+ .flip-card-front, img, .flip-card-back .itemss {
+  justify-content: center;
+    display: flex;
+}
+*/
+.card{
+  padding: 8px 8px 8px 24px;
+  text-align: center;
+  max-width: 100%;
+  justify-content: space-evenly;
+  flex-direction: wrap;
+  
+  
+}
+
+/*
+ .offtr .cattr {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: inline-block;
+  
+}
+*/
+
+/*
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+*/
+
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  background-color:black;
+  margin: 3px;
+  
+}
+
+#blink {
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  51% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+*/
+
+
+/*
+#product {
+  position:relative;
+  display:inline-block;
+}
+*/
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: 15px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family:cursive;
+}
+
+h3{
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+
+}
+
+h2{
+  font-family: sans-serif;
+  
+ 
+}
+
+s{
+  font-weight:lighter;
+  font-size:small;
+}
+
+
+.allproducts{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ 
+  
+
+  padding-top: 6px; 
+  padding-bottom: 6px; 
+  padding-left:8px; 
+  background-color:cadetblue; 
+  margin:0px 8px 0px 8px; 
+  border-radius: 10px;
+}
+
+.shopy{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left:8px; 
+  background-color:burlywood;
+  margin: 0px 8px 0px 8px; 
+  border-radius: 10px;
+
+}
+
+
+
+
+.vid{
+  display:flex;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: black;
+  color: white;
+  
+
+}
+
+.cont{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  
+  
+  
+}
+
+.vcont{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bolder;
+  font-style:oblique;
+  font-size: x-large;
+  
+  
+}
+
+.fa-quote-left, .fa-quote-right{
+  color:blue;
+  font-size:xx-large;
+  padding-right: 10px;
+  padding-left: 10px;
+}
